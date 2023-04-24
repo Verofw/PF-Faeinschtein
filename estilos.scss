@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Big+Shoulders+Display:wght@700&family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+@font-face {
+    font-family: outlined;
+    src: url(./assets/fonts/horizon_outlined.otf);
+}
+
+//paleta de colores//
+$color1: #cbb538;
+$color2: #0000;
+$color3: #ffff;
+$color4: #333;
+$colorshadow1: #a1a1a1;
+$colorshadow2: #d2c88f;
+$colortransparencia: #00000084;
+
+//fonts//
+$tipografia1: 'Roboto', sans-serif;
+$tipografia2: 'Big Shoulders Display', cursive;
+$tipografia3: 'Roboto Mono', monospace;
+$tipografia4: 'Anonymous Pro', monospace;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.barra {
+    background-image: url(../img/Mesa\ de\ trabajo\ 2.jpg);
+    background-size: cover;
+    background-position-y: 20%;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    padding: 0px;
+    height: 100%;
+
+    .menuHamburguesa {
+        margin: 30px;
+    }
+
+    .logo {
+        font-size: 5rem;
+        padding: 0px 50px;
+        text-shadow: 3px 3px 25px $color3;
+        font-family: $tipografia2;
+        transform: scale(1.03);
+        transition: 0.9s;
+    }
+
+    .logo:hover {
+        transform: scale(1.03);
+        transition: 0.9s;
+        text-shadow: 3px 3px 50px $color2;
+    }
+
+    .menu {
+        background-color: rgb(140, 154, 114);
+    }
+
+    .navegacion {
+        justify-content: space-between;
+
+        .items {
+            width: 65%;
+            justify-content: space-evenly;
+            margin-right: 30px;
+
+            .btn {
+                font-size: 1.5rem;
+                font-family: $tipografia1;
+
+                .textoMenu {
+                    color: $color3;
+                }
+
+                .textoMenu:hover {
+                    color: $color1;
+                    text-shadow: 3px 3px 50px $color2;
+                }
+
+                .textoUbicacion {
+                    color: $colorshadow2;
+                }
+
+                .textoUbicacion:hover {
+                    text-decoration: none;
+                    color: $color1;
+                }
+            }
+        }
+
+        .cajaBusqueda {
+            justify-content: center;
+
+            .buscar:hover {
+                transform: scale(1.03);
+                transition: 0.9s;
+                box-shadow: 3px 3px 50px $color2;
+            }
+        }
+    }
+}
+
+.fondo {
+    background-image: url(./img/Mesa\ de\ trabajo\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0%;
+    margin-bottom: 0px;
+
+    .bienvenidos {
+        font-family: 'outlined';
+        font-size: 3.5rem;
+        color: #cec8c8;
+        text-shadow: 0 0 5px $color1;
+    }
+
+    .textoBienvenida {
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: $tipografia3;
+        color: $color3;
+        text-shadow: 1px 0 15px $color1;
+
+        .ytb {
+            font-family: $tipografia3;
+            font-weight: bold;
+            color: $color3;
+            text-shadow: 0 0 5rem $color3;
+            text-decoration: none;
+        }
+
+        .ytb:hover {
+            color: $color3;
+            text-decoration: underline;
+        }
+    }
+
+    .laFabrica {
+        text-align: center;
+        font-family: $tipografia4;
+        font-size: 5rem;
+        margin: 5rem 0 0 0;
+        color: $color3;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-shadow: 0 0 10px $colorshadow1;
+    }
+
+    .sustos {
+        text-align: center;
+        font-family: $tipografia2;
+        font-size: 15rem;
+        color: $color3;
+        letter-spacing: 8px;
+        text-shadow: 0 0 70px $colorshadow1;
+    }
+
+    .grow {
+        max-width: 70%;
+        margin: -15% 0 0 20%;
+        transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+    }
+
+    .grow:hover {
+        transform: scale3d(1.1, 1.1, 0.3);
+        -webkit-transform: scale3d(1.1, 1.1, 0.3);
+        -moz-transform: scale3d(1.1, 1.1, 0.3);
+    }
+
+}
+
+footer {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    .redes {
+        display: flex;
+        justify-content: center;
+
+        a {
+            color: $color3;
+            text-decoration: none;
+            font-size: 3.5rem;
+            padding: 15px 40px;
+        }
+
+        a:hover {
+            opacity: 50%;
+        }
+    }
+
+    .rights {
+        display: flex;
+        font-family: $tipografia3;
+        color: white;
+        font-size: 1.2rem;
+        padding-bottom: 16px;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+.subir {
+    height: 70px;
+    width: 70px;
+    background-color: darkgray;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 32px;
+    line-height: 70px;
+    border-radius: 48px;
+
+    a {
+        text-decoration: none;
+        color: $color3;
+        font-size: 2.5rem;
+    }
+
+    a:hover {
+        opacity: 50%;
+    }
+}
+
+.subir:hover {
+    background-color: $color1;
+}
+
+.guia {
+    background-color: #000;
+    margin: 0;
+    border-radius: 0;
+
+    a {
+        color: $color1;
+        font-family: $tipografia1;
+    }
+}
+
+.tituloNoticias {
+    text-align: center;
+    font-family: 'outlined';
+    font-size: 3.5rem;
+    color: $color3;
+    opacity: 70%;
+    text-shadow: 0 0 5px $color1;
+    padding: 40px 20px;
+}
+
+.noticias {
+    padding-right: 0px;
+    margin-right: 0px;
+
+    .cajaNotaUno {
+        margin: 10px 5%;
+        padding: 15px;
+        width: 40%;
+        background-color: $colortransparencia;
+
+        .tit1 {
+            font-family: $tipografia1;
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            text-shadow: 0 0 15px $colorshadow2;
+            padding: 10px;
+        }
+
+        .des {
+            font-family: $tipografia1;
+            color: white;
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        .quote {
+            font-family: $tipografia1;
+            font-size: 1.5rem;
+            color: white;
+            font-style: italic;
+        }
+
+        .boton {
+            background-color: $color1;
+            margin-top: 20px;
+            font-family: $tipografia1;
+            font-size: 1.5rem;
+        }
+
+        .boton:hover {
+            box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+            transform: translate(0px, 5px);
+            -webkit-transform: translate(0px, 5px);
+            -moz-transform: translate(0px, 5px);
+        }
+    }
+}
+
+.cajaFabrica {
+    @extend .cajaNotaUno;
+
+    .boton {
+        @extend .boton;
+    }
+
+    .boton:hover {
+        box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+        transform: translate(0px, 5px);
+        -webkit-transform: translate(0px, 5px);
+        -moz-transform: translate(0px, 5px);
+    }
+}
+
+.carouselCaja {
+    width: 50%;
+    margin: 0 25%;
+
+    .card {
+        background-color: $colortransparencia;
+        margin-bottom: 20px;
+    }
+
+    .nombre {
+        color: white;
+        font-family: $tipografia1;
+    }
+
+    .descripcion {
+        font-size: 1.5rem;
+        font-family: $tipografia1;
+        color: white;
+    }
+
+    .boton {
+        color: $color3;
+        font-size: 2rem;
+    }
+
+    .boton:hover {
+        color: $color1;
+        text-shadow: 5px 5px 10px $color2;
+    }
+}
+
+.formulario {
+    margin: 40px;
+    padding: 40px;
+    border: solid 5px $colorshadow2;
+    color: white;
+    font-family: $tipografia1;
+    font-size: 1.3rem;
+    text-shadow: 0 0 5px $color2;
+
+    .form-group {
+        padding-left: 0px;
+    }
+
+    .formulario input:hover {
+        transform: scale(1.01);
+        transition: all 1.9s;
+    }
+
+    .suscripto {
+        margin-right: 20px;
+    }
+
+    .btnSiNo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .newsletter {
+        padding-left: 0px;
+        margin: 10px 0;
+
+        .btnNewsltt {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+        }
+    }
+
+    .btnContacto {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+
+        .enviar {
+            color: white;
+            margin-right: 20px;
+        }
+    }
+}
+
+//media querys//
+
+@media only screen and (max-width:992px) {
+    .textoMenu {
+        display: flex;
+        justify-content: start;
+        margin-left: 10px;
+    }
+
+    .textoUbicacion {
+        display: flex;
+        justify-content: start;
+        margin-left: 10px;
+    }
+
+    .cajaBusqueda {
+        display: flex;
+        justify-content: start;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .cajaBusqueda {
+        width: 80%;
+    }
+
+    .fondo .bienvenidos {
+        font-size: 2.5rem;
+    }
+
+    .fondo .textoBienvenida {
+        font-size: 1.2rem;
+    }
+
+    .fondo .laFabrica {
+        font-size: 3rem;
+    }
+
+    .fondo .sustos {
+        font-size: 10rem;
+    }
+
+    .fondo .banner {
+        margin: -20% 0 0 20%;
+    }
+
+    .footer {
+        margin: 10px;
+
+        .redes a {
+            font-size: 4rem;
+        }
+
+        .rights {
+            font-size: 2rem;
+        }
+    }
+
+    .subir {
+        height: 50px;
+        width: 50px;
+        bottom: 10px;
+        line-height: 50px;
+
+        a {
+            font-size: 2rem;
+        }
+    }
+
+    //noticias//
+
+    .tituloNoticias {
+        font-size: 2.7rem;
+    }
+
+    .noticias {
+        margin: 0px;
+        padding: 0px;
+
+        .cajaNotaUno {
+            width: 100%;
+
+            .tit1 {
+                font-size: 1.7rem;
+            }
+
+            .des {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    //fabrica//
+    .titFabrica {
+        font-size: 2rem;
+    }
+
+    .cajaFabrica {
+        width: 100%;
+    }
+
+    //nosotros//
+    .nombre {
+        font-size: 2rem;
+    }
+
+    .descripcion {
+        font-size: 1.2rem;
+    }
+
+    //contacto//
+    .titContacto {
+        padding: 20px;
+    }
+
+    .formulario {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .cajaBusqueda {
+        width: 50%;
+        flex-flow: nowrap;
+        margin: 10px;
+    }
+
+    //contacto//
+    .titContacto {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+
+    .formulario {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .barra .logo {
+        font-size: 4rem;
+        padding: 25px;
+    }
+
+    .navegacion .cajaBusqueda {
+        width: 80%;
+    }
+
+    .fondo .bienvenidos {
+        font-size: 2rem;
+    }
+
+    .fondo .textoBienvenida {
+        font-size: 1rem;
+    }
+
+    .fondo .laFabrica {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .fondo .sustos {
+        font-size: 7rem;
+    }
+
+    footer .redes a {
+        font-size: 3rem;
+    }
+
+    footer .rights {
+        font-size: 0.8rem;
+    }
+
+    .subir {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+
+        a {
+            font-size: 1.5rem;
+        }
+    }
+
+    //noticias//
+    .tituloNoticias {
+        font-size: 2.3rem;
+        padding-bottom: 10px;
+    }
+
+    .card-body .tit1 {
+        font-size: 2rem;
+        padding: 0px;
+    }
+
+    .card-body .des {
+        font-size: 1.2rem;
+    }
+
+    //fabrica//
+    .titFabrica {
+        font-size: 1.8rem;
+    }
+
+    //nosotros//
+
+    .card-body .nombre {
+        font-size: 1.5rem;
+    }
+
+    .card-body .descripcion {
+        font-size: 1rem;
+    }
+
+    //contacto//
+    .titContacto {
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    .enviar {
+        font-size: 1rem;
+    }
+
+    .reset {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .barra .logo {
+        font-size: 3rem;
+    }
+
+    .fondo {
+        padding: 10px 0;
+
+
+        .bienvenidos {
+            font-size: 1.5rem;
+            padding: 10px 5px 10px 5px;
+        }
+
+        .textoBienvenida {
+            font-size: 0.8rem;
+            padding: 0 10px;
+        }
+
+        .laFabrica {
+            font-size: 2rem;
+            margin-top: 3rem;
+        }
+
+        .sustos {
+            font-size: 5rem;
+        }
+
+        .banner {
+            max-width: 100%;
+            margin: -20% 0 0 0;
+            padding-bottom: 20%;
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 8rem;
+
+        .redes a {
+            font-size: 2rem;
+        }
+
+        .rights {
+            font-size: 0.8rem;
+        }
+    }
+
+    //noticias//
+    .tituloNoticias {
+        font-size: 1.8rem;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+
+    .cajaNotaUno .card-body {
+        padding: 10px 0;
+
+        .tit1 {
+            font-size: 1.5rem;
+            padding: 0px;
+        }
+
+        .des {
+            font-size: 1rem;
+        }
+
+        .quote {
+            font-size: 1rem;
+        }
+    }
+
+    .tabla li {
+        font-size: 1rem;
+        padding: 0px 5px;
+    }
+
+    //fabrica//
+    .titFabrica {
+        font-size: 1.5rem
+    }
+
+    //contacto//
+    .titContacto {
+        font-size: 1.5rem;
+    }
+
+    .formulario {
+        font-size: 1rem;
+        margin: 10px 20px;
+
+        .btnSiNo {
+            width: 15px;
+            height: 15px;
+            flex-wrap: wrap;
+        }
+
+        .enviar {
+            font-size: 0.9rem;
+            margin: 1px;
+            padding: 5px;
+        }
+
+        .reset {
+            font-size: 0.9rem;
+            margin: 1px;
+            padding: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width:311px) {}

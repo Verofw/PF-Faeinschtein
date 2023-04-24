@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="cine, terror, youtube, fabrica de sustos, contactanos, suscribite, newsletter, mensaje">
+    <meta name="descripcion" content="Tenes alguna sugerencia o critica? Ponete en contacto con nosotros!">
+    <meta name="author" content="Verónica Faeinschtein">
+    <meta name="country" content="argentina">
+    <meta name="distribution" content="global">
+    <meta name="doc-type" content="web page">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos.css" />
+</head>
+<header>
+    <nav class="barra navbar navbar-expand-lg navbar-dark" id="barra">
+        <a class="navbar-brand logo" href="../index.html">FdS</a>
+        <button class="navbar-toggler menu menuHamburguesa" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navegacion collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="items navbar-nav mr-auto">
+                <li class="nav-item btn">
+                    <a class="textoMenu text-decoration-none" href="./noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item btn">
+                    <a class="textoMenu text-decoration-none" href="./fabrica.html">Fábrica</a>
+                </li>
+                <li class="nav-item btn">
+                    <a class="textoMenu text-decoration-none" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item btn">
+                    <a class="textoUbicacion" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 cajaBusqueda">
+                <input class="buscar form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" />
+                <button class="btn my-2 my-sm-0" type="submit">
+                    🔎
+                </button>
+            </form>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="guia breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+    </nav>
+</header>
+<main class="fondo">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="tituloNoticias text-uppercase col-12 titContacto font-weight-bold">Compartí tu consulta o
+                sugerencia!</h1>
+        </div>
+    </div>
+    <form class="formulario">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Nombre Completo</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresa tu correo electronico">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="inputState">Desde donde nos escribis?</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Elegi uno...</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile"> Chile</option>
+                    <option value="Peru"> Perú</option>
+                    <option value="Uruguay"> Uruguay</option>
+                    <option value="Otro"> Otro</option>
+                </select>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="form-check form-check-inline">
+                <span class="suscripto">Ya estás suscripto al canal?</span>
+                <input class="form-check-input btnSiNo" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">Si</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input btnSiNo" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>
+        </div>
+        <div class="form-check newsletter">
+            <span class="suscripto">Querés suscribirte a nuestro Newsletter?</span>
+            <input class="form-check-input position-static btnNewsltt" type="checkbox" id="blankCheckbox"
+                value="option1" aria-label="...">
+        </div>
+        <div class="form-group">
+            <label for="comment">Dejanos tu mensaje</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <div class="btnContacto">
+            <div class="d-flex justify-content-center">
+                <button type="button" class="enviar btn btn-secondary btn-lg">Enviar</button>
+            </div>
+            <div class="limpiarCampos d-flex justify-content-center">
+                <input class="reset btn btn-secondary btn-lg" type="reset" value="Limpiar campos">
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div class="redes" data-aos="zoom-in">
+            <a href="https://www.instagram.com/lafabricadesustos/" target="_blank"> <i
+                    class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCGn9CQUmYFKawStxPUEflWw" target="_blank"> <i
+                    class="fa-brands fa-youtube"></i></a>
+        </div>
+        <h2 class="rights">All Rights Reserved ® </h2>
+    </footer>
+    <div class="subir">
+        <a href="./contacto.html#barra"> <i class="fa-solid fa-chevron-up"></i> </a>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+
+</html>
