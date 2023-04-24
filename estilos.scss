@@ -399,8 +399,27 @@ footer {
         align-content: center;
 
         .enviar {
-            color: white;
+            color: $color3;
             margin-right: 20px;
+            background-image: linear-gradient(to right, #7b7878 0%, #5f623c 51%, #7b7878 100%);
+            background-size: 200% auto;
+            transition: 0.5s;
+        }
+
+        .enviar:hover {
+            background-position: right center;
+        }
+
+        .reset{
+            color: $color3;
+            margin-right: 20px;
+            background-image: linear-gradient(to right, #7b7878 0%, #5f623c 51%, #7b7878 100%);
+            background-size: 200% auto;
+            transition: 0.5s;
+        }
+
+        .reset:hover{
+            background-position: right center;
         }
     }
 }

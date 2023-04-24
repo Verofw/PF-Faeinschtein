@@ -328,6 +328,22 @@ footer .rights {
 .formulario .btnContacto .enviar {
   color: white;
   margin-right: 20px;
+  background-image: linear-gradient(to right, #7b7878 0%, #5f623c 51%, #7b7878 100%);
+  background-size: 200% auto;
+  transition: 0.5s;
+}
+.formulario .btnContacto .enviar:hover {
+  background-position: right center;
+}
+.formulario .btnContacto .reset {
+  color: white;
+  margin-right: 20px;
+  background-image: linear-gradient(to right, #7b7878 0%, #5f623c 51%, #7b7878 100%);
+  background-size: 200% auto;
+  transition: 0.5s;
+}
+.formulario .btnContacto .reset:hover {
+  background-position: right center;
 }
 
 @media only screen and (max-width: 992px) {
